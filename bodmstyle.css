@@ -60,7 +60,7 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    /*overflow: hidden;*/
+    overflow: hidden;
     background-color: #a00b33;
     position: relative;
 }
