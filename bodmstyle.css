@@ -1,0 +1,335 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fadein-out {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@font-face {
+    font-family: amoresa;
+    src: url(fonts/amoresa.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /*overflow: hidden;*/
+    background-color: #a00b33;
+    position: relative;
+}
+
+.border-top {
+    position: absolute;
+    top: 5%; /* Adjust distance from top */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust size as needed */
+    height: 50%;
+    background-image: url(images/top.svg); /* Replace with your actual image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.border-bottom {
+    position: absolute;
+    top: 92%; /* Adjust distance from bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust size as needed */
+    height: 50%;
+    background-image: url(images/bottom.svg); /* Replace with your actual image path */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.center-image {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%; /* Adjust size as needed */
+    height: 50%; /* Adjust size as needed */
+    background-image: url(images/center.svg); /* Replace with your actual image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.center-image-top {
+    position: absolute;
+    top: 11%; /* Adjust as needed (distance from top) */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%; /* Adjust size */
+    height: 40%; /* Adjust size */
+    background-image: url(images/rose.svg); /* Replace with actual image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.adjusted-text {
+   
+    top: 30%;
+    /*left: 50%;*/
+    /* margin-bottom: 50px; */
+    width: 100%;
+    font-family: "Libre Baskerville", serif;
+    color: #f6a7c2;
+    margin: 0 0 20px 0;
+    letter-spacing: 2px;
+    font-size: 0.7rem;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+    
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.middle-container {
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    
+    width: 100%;
+    text-align: center;
+}
+
+.middle-gif {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: auto;
+    opacity: 0;
+    /*background-image: url('images/2.gif'); 
+    background-size: contain;
+    background-repeat: no-repeat;*/
+
+    -webkit-animation: fadein-out 6s ease-in forwards;
+    -moz-animation: fadein-out 6s ease-in forwards;
+    -o-animation: fadein-out 6s ease-in forwards;
+       animation: fadein-out 6s ease-in forwards;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+    -o-animation-delay: 0s;
+    animation-delay: 0s;
+}
+.middle-text {
+    
+    color: #f6a7c2;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "amoresa", serif;
+    font-size: 3.2rem; /* Make it bigger */
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 4s;
+    -moz-animation-delay: 4s;
+    -o-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.bottom-image {
+
+    position: absolute; 
+    top: 52%; 
+    display: block;
+    margin: 0px auto;
+    width: 160%;
+    height: auto;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+    animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.date-container {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    text-align: center;
+}
+
+.date {
+    
+    /*position: relative;
+    top: 10px;
+    display: block;
+    margin: 0px auto;*/
+    width: 100%;
+    height: auto;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 9s;
+    -moz-animation-delay: 9s;
+    -o-animation-delay: 9s;
+    animation-delay: 9s;
+}
+
+.circle {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*display: block;
+    margin: 0px auto;*/
+    width: 200%;
+    height: auto;
+    opacity: 0;
+
+    -webkit-animation: fadein-out 8s ease-in forwards;
+    -moz-animation: fadein-out 8s ease-in forwards;
+    -o-animation: fadein-out 8s ease-in forwards;
+       animation: fadein-out 8s ease-in forwards;
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    animation-delay: 6s;
+
+}
+
+.text1 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Libre Baskerville", serif;
+    font-size: 0.7rem; /* Adjust text size */
+    color: #f6a7c2;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 13s;
+    -moz-animation-delay: 13s;
+    -o-animation-delay: 13s;
+    animation-delay: 13s;
+}
+
+.text2 {
+    position: absolute;
+    top: 71.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Libre Baskerville", serif;
+    font-size: 0.7rem; /* Adjust text size */
+    color: #f6a7c2;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 14s;
+    -moz-animation-delay: 14s;
+    -o-animation-delay: 14s;
+    animation-delay: 14s;
+}
+
+.write-button {
+    position: fixed;
+    right: 100px;
+    top: 90%;
+    transform: translateY(-50%) scale(0.2); 
+    transform-origin: top right;
+    opacity: 0;
+
+    -webkit-animation: fadein 1s ease-in forwards;
+    -moz-animation: fadein 1s ease-in forwards;
+    -o-animation: fadein 1s ease-in forwards;
+       animation: fadein 1s ease-in forwards;
+    -webkit-animation-delay: 11s;
+    -moz-animation-delay: 11s;
+    -o-animation-delay: 11s;
+       animation-delay: 11s;
+    /*object-fit: contain;*/
+    /*width: 10px;
+    height: auto;*/
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.5));
+    transition: opacity 0.3s ease-in-out;
+}
